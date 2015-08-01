@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta title="My notes" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+    </head>
+    <body>
+        <div id="note_app">
+                <h1>My notes</h1>
+                <div id="note_area">
+                    <div>
+                        <div>
+                            <input type="text" id="note" name="note" placeholder="Your note" />
+                        </div>
+                        <div id="error_message"></div>
+                        <div id="chars_left">Characters left: <span>...</span></div>
+                    </div>
+                    <ul id="notes_list">
+                    </ul>
+                </ul>
+        </div>
+
+        <script type="text/template" id="item-template">
+            <div class="view">
+                <a class="del" title="Delete">x</a>
+                <div class="ts"><%- created_ts %></div>
+                <div class="note"><%- note %></div>
+            </div>
+        </script>
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="/js/underscore-min.js"></script>
+        <script src="/js/backbone-min.js"></script>
+        <script src="/js/backbone.localStorage-min.js"></script>
+        <script src="/js/notes.js"></script>
+    </body>
+</html>

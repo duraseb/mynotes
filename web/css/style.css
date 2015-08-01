@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #efefef;
+    color: #333333;
+    width: 560px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#note_app {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+#note_app h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+#note_app input[type="text"] {
+    width: 500px;
+    font-size: 24px;
+    font-family: inherit;
+    line-height: 1.4em;
+    border: 0;
+    outline: none;
+    padding: 6px;
+    border: 1px solid #999999;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+#note_app #note_area #error_message {
+    color: #A60321;
+    font-weight: bold;
+    background-color: #D9ADB5;
+    display: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#note_app #chars_left {
+	font-size: 0.8em;
+}
+
+#note_app #notes_list {
+    padding: 0;
+}
+
+#note_app #notes_list li {
+    list-style: none;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px 0;
+    border-radius: 8px;
+}
+
+#note_app .view .note {
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#note_app .view .ts {
+    font-size: 0.75em;
+    padding-left: 5px;
+}
+
+#note_app .view .del {
+    float: right;
+    display: inline-block;
+    background-color: red;
+    color: white;
+	padding: 3px;
+	border-radius: 4px;
+	line-height: 0.8em;
+	cursor: pointer;
+}
+
+.note_error {
+	border-color: #941206;
+	background-color: #E88980;
+}
